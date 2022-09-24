@@ -38,6 +38,7 @@
 
     <div id="emails-view"></div>
     <div id="view-email"></div>
+    <div id="sent-view"></div>
     
     <div id="compose-view">
         <h3 class="mb-3">New Email</h3>
@@ -51,10 +52,12 @@
             <div class="form-group mb-3">
                 <input class="form-control rounded-0" id="compose-subject" placeholder="Subject">
             </div>
-            <textarea class="form-control mb-3 rounded-0" id="compose-body" placeholder="Body" rows="10"></textarea>
+            <div contenteditable class="form-control mb-3 rounded-0" id="compose-body">
+   
+            </div>
             <div class="d-grid gap-2 d-md-flex justify-content-end">
     
-                <input type="submit" class="btn btn-primary rounded-0"/>
+                <button type="submit" class="btn btn-primary rounded-0">Send</button>
             </div>
         </form>
     </div>
