@@ -36,14 +36,17 @@
 
     <hr>
 
-    
+    <div id="result-view"></div>
     <div id="emails-view"></div>
     <div id="view-email"></div>
     <div id="sent-view"></div>
     
     <div id="compose-view">
+
         <h3 class="mb-3">New Email</h3>
+
         <form id="compose-form">
+            {% csrf_token %}
             <div class="form-group input-group mb-3">
                 <span class="input-group-text rounded-0">From: </span><input disabled class="form-control rounded-0" value="{{ request.user.email }}">
             </div>
